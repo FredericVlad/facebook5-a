@@ -9,7 +9,7 @@ require_once '../app/controllers/TelefonoController.php';
 require_once '../app/controllers/EstadocivilController.php';
 
 $requestUri = $_SERVER["REQUEST_URI"];
-$basePath = '/apple5a/public/';
+$basePath = '/facebook5-a/public/';
 // Remover el prefijo basePath
 $route = str_replace($basePath, '', $requestUri);
 $route = strtok($route, '?'); // Quitar parámetros GET
@@ -50,7 +50,7 @@ if (empty($route) || $route === '/') {
                 $controller = new SexoController();
                 $controller->eliminar($_GET['idsexo']);
             } else {
-                echo "Error: Falta el ID para editar.";
+                echo "Error: Falta el ID para eliminar.";
             }
             break;
         case 'sexo/delete':
