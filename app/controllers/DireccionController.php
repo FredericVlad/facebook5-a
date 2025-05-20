@@ -5,9 +5,9 @@ PHP
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/facebook-5a/config/database.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/facebook-5a/app/models/Direccion.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/facebook-5a/app/models/Persona.php'; // Si necesitas listar personas en el formulario
+require_once $_SERVER['DOCUMENT_ROOT'] . '/facebook5-a/config/database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/facebook5-a/app/models/Direccion.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/facebook5-a/app/models/Persona.php'; // Si necesitas listar personas en el formulario
 
 class DireccionController {
     private $direccion;

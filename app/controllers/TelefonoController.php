@@ -4,8 +4,8 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // En TelefonoController.php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/facebook-5a/config/database.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/facebook-5a/app/models/Telefono.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/facebook5-a/config/database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/facebook5-a/app/models/Telefono.php';
 
 class TelefonoController {
     private $telefono;
