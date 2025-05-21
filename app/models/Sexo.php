@@ -1,6 +1,6 @@
 <?php
 //controlador sexo
-class sexo {
+class Sexo {
     private $conn;
     private $table_name = "sexo";
 
