@@ -5,6 +5,10 @@ error_reporting(E_ALL);
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/facebook5-a/config/database.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/facebook5-a/app/models/Persona.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/apple6b/app/models/Sexo.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/apple6b/app/models/Estadocivil.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/apple6b/app/models/Direccion.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/apple6b/app/models/Telefono.php';
 
 
 class PersonaController {
