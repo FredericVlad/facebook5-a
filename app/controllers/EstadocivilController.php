@@ -92,8 +92,8 @@ class estadocivilController {
     // Eliminar un estado civil
     public function delete() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            if (isset($_POST['id'])) {
-                $this->estadocivil->id = $_POST['id'];
+            if (isset($_POST['idestadocivil'])) {
+                $this->estadocivil->idestadocivil = $_POST['idestadocivil'];
                 if ($this->estadocivil->delete()) {
                     echo "Estado Civil borrado exitosamente";
                     header('Location: index.php?msg=deleted');
