@@ -86,8 +86,8 @@ public function update() {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Formulario recibido";  // Verificar si llega el formulario
         if (isset($_POST['nombre'])) {
-            $this->sexoa->nombre = $_POST['nombre'];
-            $this->sexoa->idsexo = $_POST['idsexo'];
+            $this->sexo->nombre = $_POST['nombre'];
+            $this->sexo->idsexo = $_POST['idsexo'];
             if ($this->sexo->update()) {
                 echo "Sexo actualizado exitosamente";
                 // Redirigir o mostrar un mensaje de éxito
@@ -113,9 +113,9 @@ public function update() {
     // Eliminar un sexo
     public function delete() {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_POST['id'])) {
-            $this->sexoa->id = $_POST['id'];
-        if ($this->sexoa->delete()) {
+        if (isset($_POST['idsexo'])) {
+            $this->sexo->idsexo = $_POST['idsexo'];
+        if ($this->sexo->delete()) {
                 echo "Sexo borrado exitosamente";
 		die();
             header('Location: index.php?msg=deleted');
