@@ -113,8 +113,8 @@ public function update() {
     // Eliminar un sexo
     public function delete() {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_POST['id'])) {
-            $this->sexo->id = $_POST['id'];
+        if (isset($_POST['nombre'])) {
+            $this->sexo->nombre = $_POST['nombre'];
         if ($this->sexo->delete()) {
                 echo "Sexo borrado exitosamente";
 		die();
