@@ -63,13 +63,13 @@ public function edit($idsexo) {
 
 
 
-public function eliminar($nombre) {
+public function eliminar($idsexo) {
 
 // Pasar el ID al modelo antes de llamar a readOne()
-        $this->sexo->nombre = $nombre;
-        $nombre = $this->sexo->readOne();
+        $this->sexo->idsexo = $idsexo;
+        $sexo = $this->sexo->readOne();
 
-        if (!$nombre) {
+        if (!$sexo) {
             die("Error: No se encontró el registro.");
         }
 
@@ -113,8 +113,8 @@ public function update() {
     // Eliminar un sexo
     public function delete() {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_POST['nombre'])) {
-            $this->sexo->nombre = $_POST['nombre'];
+        if (isset($_POST['idsexo'])) {
+            $this->sexo->idsexo = $_POST['idsexo'];
         if ($this->sexo->delete()) {
                 echo "Sexo borrado exitosamente";
 		die();
