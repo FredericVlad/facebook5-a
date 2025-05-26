@@ -84,7 +84,7 @@ public function read() {
 
 
 	  // Preparar la consulta
-        $query = "DELETE FROM " . $this->table_name . " WHERE id = :id";
+        $query = "DELETE FROM " . $this->table_name . " WHERE nombre = :nombre";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":id", $this->id, PDO::PARAM_INT);
 	
