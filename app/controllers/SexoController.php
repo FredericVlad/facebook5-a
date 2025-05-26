@@ -16,12 +16,12 @@ class SexoController {
 
     public function __construct() {
         $this->db = (new Database())->getConnection();
-        $this->sexoa = new Sexo($this->db);
+        $this->sexo = new Sexo($this->db);
     }
 
     // Mostrar todos los sexos
     public function index() {
-        $sexos = $this->sexoa->read();
+        $sexos = $this->sexo->read();
         require_once '../app/views/sexo/index.php';
     }
 
@@ -31,8 +31,8 @@ public function create() {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Formulario recibido";  // Verificar si llega el formulario
         if (isset($_POST['nombre'])) {
-            $this->sexoa->nombre = $_POST['nombre'];
-            if ($this->sexoa->create()) {
+            $this->sexo->nombre = $_POST['nombre'];
+            if ($this->sexo->create()) {
                 echo "Sexo creado exitosamente";
                 // Redirigir o mostrar un mensaje de éxito
             } else {
@@ -51,8 +51,8 @@ public function create() {
 public function edit($idsexo) {
 
 // Pasar el ID al modelo antes de llamar a readOne()
-        $this->sexoa->idsexo = $idsexo;
-        $sexo = $this->sexoa->readOne();
+        $this->sexo->idsexo = $idsexo;
+        $sexo = $this->sexo->readOne();
 
         if (!$sexo) {
             die("Error: No se encontró el registro.");
@@ -66,8 +66,8 @@ public function edit($idsexo) {
 public function eliminar($idsexo) {
 
 // Pasar el ID al modelo antes de llamar a readOne()
-        $this->sexoa->idsexo = $idsexo;
-        $sexo = $this->sexoa->readOne();
+        $this->sexo->idsexo = $idsexo;
+        $sexo = $this->sexo->readOne();
 
         if (!$sexo) {
             die("Error: No se encontró el registro.");
