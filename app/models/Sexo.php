@@ -75,10 +75,10 @@ public function read() {
     // Eliminar un sexo
     public function delete() {
         try {
-            if (empty($this->id)) {
+            if (empty($this->nombre)) {
                 return false;
             }
-	            error_log("Intentando eliminar el ID: " . $this->id);
+	            error_log("Intentando eliminar el ID: " . $this->nombre);
 
 
 
