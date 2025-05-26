@@ -16,7 +16,7 @@ class SexoController {
 
     public function __construct() {
         $this->db = (new Database())->getConnection();
-        $this->sexo = new Sexo($this->db);
+        $this->sexo = new sexo($this->db);
     }
 
     // Mostrar todos los sexos
