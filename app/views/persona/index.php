@@ -32,7 +32,7 @@
                         <td><?php echo htmlspecialchars($persona['nombres']); ?></td>
                         <td><?php echo htmlspecialchars($persona['apellidos']); ?></td>
                         <td><?php echo htmlspecialchars($persona['fechanacimiento']); ?></td>
-                        <td><?php echo htmlspecialchars($persona['nombre_sexo']); ?></td> <td><?php echo htmlspecialchars($persona['nombre_estadocivil']); ?></td> <td>
+                        <td><?php echo htmlspecialchars($persona['idsexo']); ?></td> <td><?php echo htmlspecialchars($persona['idestadocivil']); ?></td> <td>
                             <a href="/facebook5-a/public/persona/editForm?id=<?php echo htmlspecialchars($persona['idpersona']); ?>">
                                 <button>Editar</button>
                             </a>
