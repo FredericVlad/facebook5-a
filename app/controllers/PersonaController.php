@@ -44,8 +44,8 @@ class PersonaController {
                 $this->persona->nombres = $_POST['nombres'];
                 $this->persona->apellidos = $_POST['apellidos'];
                 $this->persona->fechanacimiento = $_POST['fechanacimiento'];
-                $this->persona->idsexo = $_POST['idsexo'];
-                $this->persona->idestadocivil = $_POST['idestadocivil'];
+                $this->persona->idsexo = $_POST['nombre'];
+                $this->persona->idestadocivil = $_POST['nombre'];
 
                 if ($this->persona->create()) {
                     header('Location: index.php?msg=created');
@@ -93,8 +93,8 @@ class PersonaController {
                 $this->persona->nombres = $_POST['nombres'];
                 $this->persona->apellidos = $_POST['apellidos'];
                 $this->persona->fechanacimiento = $_POST['fechanacimiento'];
-                $this->persona->idsexo = $_POST['idsexo'];
-                $this->persona->idestadocivil = $_POST['idestadocivil'];
+                $this->persona->idsexo = $_POST['nombre'];
+                $this->persona->idestadocivil = $_POST['nombre'];
 
                 if ($this->persona->update()) {
                     header('Location: index.php?msg=updated');
