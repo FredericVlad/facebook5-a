@@ -95,6 +95,12 @@ if (empty($route) || $route === '/') {
                         $controller->update();
                     }
                     break;
+        case 'estadocivil/delete':
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                        $controller = new EstadocivilController();
+                        $controller->delete();
+                    }
+                    break;
         default:
             echo "Error 404: Página no encontrada.";
             break;
