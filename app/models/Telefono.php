@@ -1,5 +1,6 @@
 <?php
 // Modelo Telefono
+// Este modulo de corresonde al Masapanta Steven
 class Telefono {
     private $conn;
     private $table_name = "telefono";
