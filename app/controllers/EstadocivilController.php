@@ -1,4 +1,13 @@
 <?php
+/**
+ * EstadocivilController.php
+ * Controlador para manejar los estados civiles.
+ *
+ * @author JeremyHurtad0
+ * @date 2025-05-28
+ */
+
+
 // MEJORAS EN VISUAL CODE
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
